@@ -1,11 +1,6 @@
-from validate_docbr import CNPJ
-from cpf_cnpj import Documento
+from TelefonesBr import TelefonesBr
+import re
 
-exemplo_cnpj = "35379838000112"
-exemplo_cpf = "53327004072"
+telefone = "5543991774748"
 
-
-documento = Documento.cria_documento(exemplo_cnpj)
-print(documento)
-documento2 = Documento.cria_documento(exemplo_cpf)
-print(documento2)
+telefone_objeto = TelefonesBr(telefone)
